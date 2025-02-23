@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: sidy <sidy@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/17 16:09:18 by sidiallo          #+#    #+#             */
-/*   Updated: 2025/02/23 19:07:20 by sidy             ###   ########.fr       */
+/*   Created: 2025/02/22 13:04:52 by sidy              #+#    #+#             */
+/*   Updated: 2025/02/23 18:52:29 by sidy             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,9 +26,11 @@ class Zombie
         
         private:
         std::string name;
+        
+        
     };
     
-    void randomChump( std::string name );
-    Zombie* newZombie( std::string nameZombie );
+    Zombie* zombieHorde( int N, std::string name );
+    
 
 #endif

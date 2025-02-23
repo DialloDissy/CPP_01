@@ -3,19 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   newZombie.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sidiallo <sidiallo@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sidy <sidy@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/20 16:38:19 by sidiallo          #+#    #+#             */
-/*   Updated: 2025/02/20 17:32:51 by sidiallo         ###   ########.fr       */
+/*   Updated: 2025/02/23 19:05:59 by sidy             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
 
-Zombie* Zombie::newZombie( std::string nameZombie )
+Zombie* newZombie( std::string nameZombie )
 {
     Zombie* newZombie  = new Zombie();
-    newZombie->name = nameZombie; 
+    newZombie->setName(nameZombie);
     return(newZombie);
 }

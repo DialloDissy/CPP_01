@@ -1,34 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.hpp                                         :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sidy <sidy@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/17 16:09:18 by sidiallo          #+#    #+#             */
-/*   Updated: 2025/02/23 19:07:20 by sidy             ###   ########.fr       */
+/*   Created: 2025/02/23 20:03:18 by sidy              #+#    #+#             */
+/*   Updated: 2025/02/23 20:09:32 by sidy             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ZOMBIE_HPP
-# define ZOMBIE_HPP
+#include<iostream>
 
-# include <iostream>
-
-class Zombie
+int main()
 {
-    public:
-        Zombie();
-        void announce();
-        std::string getName()const;
-        void setName(std::string name);
-        ~Zombie();
-        
-        private:
-        std::string name;
-    };
+    std::string A = "HI THIS IS BRAIN";
+    std::string stringPTR;
+    std::string stringREF;
     
-    void randomChump( std::string name );
-    Zombie* newZombie( std::string nameZombie );
-
-#endif
+    return(0);
+}
