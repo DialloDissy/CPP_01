@@ -1,32 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Weapon.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sidiallo <sidiallo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/23 20:03:18 by sidy              #+#    #+#             */
-/*   Updated: 2025/02/24 17:21:57 by sidiallo         ###   ########.fr       */
+/*   Created: 2025/02/24 18:06:47 by sidiallo          #+#    #+#             */
+/*   Updated: 2025/02/24 20:33:40 by sidiallo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<iostream>
+#include "Weapon.hpp"
 
-int main()
+
+Weapon::Weapon(std::string type):type(type)
 {
-    std::string A = "HI THIS IS BRAIN";
-    std::string* stringPTR   = &A;
-    std::string& stringREF = A;
-
-    std::cout <<&A<< std::endl;
-    std::cout <<&stringREF<< std::endl;
-    std::cout <<stringPTR<< std::endl;
-    
-    std::cout <<A<< std::endl;
-    std::cout <<stringREF<< std::endl;
-    std::cout <<*stringPTR<< std::endl;
-    
-    
-    
-    return(0);
+    std::cout << " constructor weapon" << std::endl;
 }
+
+
+std::string Weapon::getType()const
+{
+    return(this->type);
+}
+
+void Weapon::setType(std::string type)
+{
+    this->type = type;
+}
+
+Weapon::~Weapon()
+{
+}
+
+    

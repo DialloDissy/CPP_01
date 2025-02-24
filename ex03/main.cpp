@@ -5,28 +5,30 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: sidiallo <sidiallo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/23 20:03:18 by sidy              #+#    #+#             */
-/*   Updated: 2025/02/24 17:21:57 by sidiallo         ###   ########.fr       */
+/*   Created: 2025/02/24 17:24:37 by sidiallo          #+#    #+#             */
+/*   Updated: 2025/02/24 20:31:15 by sidiallo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<iostream>
+#include "HumanA.hpp"
+#include "HumanB.hpp"
+
 
 int main()
 {
-    std::string A = "HI THIS IS BRAIN";
-    std::string* stringPTR   = &A;
-    std::string& stringREF = A;
+    Weapon club = Weapon("katana");
+    
+    // HumanA blade("blade",club);
+    // blade.attack();
+    // club.setType("great Sword");
+    // blade.attack();
 
-    std::cout <<&A<< std::endl;
-    std::cout <<&stringREF<< std::endl;
-    std::cout <<stringPTR<< std::endl;
-    
-    std::cout <<A<< std::endl;
-    std::cout <<stringREF<< std::endl;
-    std::cout <<*stringPTR<< std::endl;
-    
-    
+    HumanB blade("blade");
+    blade.attack();
+    club.setType("great Sword");
+    blade.setWeapon(club);
+    blade.attack();
+
     
     return(0);
 }

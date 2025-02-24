@@ -1,9 +1,12 @@
-NAME = is_brain
+NAME = violence
 
-FLAG = -Wall -Wextra -Werror -std=c++98
+FLAG =  -g -Wall -Wextra -Werror -std=c++98
 CC = c++ 
 
 SRC = main.cpp\
+		HumanA.cpp\
+		HumanB.cpp\
+		Weapon.cpp\
 
 
 

@@ -1,32 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Weapon.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sidiallo <sidiallo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/23 20:03:18 by sidy              #+#    #+#             */
-/*   Updated: 2025/02/24 17:21:57 by sidiallo         ###   ########.fr       */
+/*   Created: 2025/02/24 17:30:35 by sidiallo          #+#    #+#             */
+/*   Updated: 2025/02/24 19:38:58 by sidiallo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<iostream>
+#ifndef WEAPON_HPP
+# define WEAPON_HPP
 
-int main()
+#include <iostream>
+
+class Weapon
 {
-    std::string A = "HI THIS IS BRAIN";
-    std::string* stringPTR   = &A;
-    std::string& stringREF = A;
+  public:
+    Weapon(std::string type);
+    std::string getType()const;
+    void setType(std::string type);
+    ~Weapon();
+  
+  private:
+    std::string type;
 
-    std::cout <<&A<< std::endl;
-    std::cout <<&stringREF<< std::endl;
-    std::cout <<stringPTR<< std::endl;
-    
-    std::cout <<A<< std::endl;
-    std::cout <<stringREF<< std::endl;
-    std::cout <<*stringPTR<< std::endl;
-    
-    
-    
-    return(0);
-}
+};
+
+#endif

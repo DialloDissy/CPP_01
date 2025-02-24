@@ -1,32 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   HumanA.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sidiallo <sidiallo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/23 20:03:18 by sidy              #+#    #+#             */
-/*   Updated: 2025/02/24 17:21:57 by sidiallo         ###   ########.fr       */
+/*   Created: 2025/02/24 19:06:47 by sidiallo          #+#    #+#             */
+/*   Updated: 2025/02/24 20:32:19 by sidiallo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<iostream>
+#include "HumanA.hpp"
 
-int main()
+HumanA::HumanA(std::string name,Weapon weapon)
 {
-    std::string A = "HI THIS IS BRAIN";
-    std::string* stringPTR   = &A;
-    std::string& stringREF = A;
+    std::cout << "constructor humanA"<< std::endl;
+    
+    this->weapon = weapon.getType();
+    this->name = name;
 
-    std::cout <<&A<< std::endl;
-    std::cout <<&stringREF<< std::endl;
-    std::cout <<stringPTR<< std::endl;
+}
+
+void HumanA::attack()
+{
+    std::cout << HumanA::name<< " attacks with their "<< HumanA::weapon << std::endl;
+}
+
+HumanA::~HumanA()
+{
+    std::cout << "destructor humanA"<< std::endl;
     
-    std::cout <<A<< std::endl;
-    std::cout <<stringREF<< std::endl;
-    std::cout <<*stringPTR<< std::endl;
-    
-    
-    
-    return(0);
 }

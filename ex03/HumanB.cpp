@@ -1,32 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   HumanB.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sidiallo <sidiallo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/23 20:03:18 by sidy              #+#    #+#             */
-/*   Updated: 2025/02/24 17:21:57 by sidiallo         ###   ########.fr       */
+/*   Created: 2025/02/24 19:06:26 by sidiallo          #+#    #+#             */
+/*   Updated: 2025/02/24 20:32:44 by sidiallo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<iostream>
+#include "HumanB.hpp"
 
-int main()
+HumanB::HumanB(std::string name)
 {
-    std::string A = "HI THIS IS BRAIN";
-    std::string* stringPTR   = &A;
-    std::string& stringREF = A;
+    std::cout << "constructor humanB"<< std::endl;
+    this->name = name;
+}
 
-    std::cout <<&A<< std::endl;
-    std::cout <<&stringREF<< std::endl;
-    std::cout <<stringPTR<< std::endl;
+void HumanB::setWeapon(Weapon weapon)
+{
+    this->weapon = weapon.getType();
+}
+
+void HumanB::attack()
+{
+    std::cout << HumanB::name<< " attacks with their "<< HumanB::weapon << std::endl;
+}
+
+
+HumanB::~HumanB()
+{
+    std::cout << "destructor humanB"<< std::endl;
     
-    std::cout <<A<< std::endl;
-    std::cout <<stringREF<< std::endl;
-    std::cout <<*stringPTR<< std::endl;
-    
-    
-    
-    return(0);
 }
