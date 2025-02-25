@@ -1,14 +1,10 @@
-NAME = violence
+NAME = replace
 
-FLAG =  -Wall -Wextra -Werror -std=c++98
+FLAG =  -g -Wall -Wextra -Werror -std=c++98
 CC = c++ 
 
 SRC = main.cpp\
-		HumanA.cpp\
-		HumanB.cpp\
-		Weapon.cpp\
-
-
+		
 
 OBJ = $(SRC:.cpp=.o)
 
