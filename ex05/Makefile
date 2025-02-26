@@ -1,9 +1,10 @@
-NAME = replace
+NAME = Harl
 
-FLAG =  -Wall -Wextra -Werror -std=c++98
+FLAG =  -g -Wall -Wextra -Werror -std=c++98
 CC = c++ 
 
 SRC = main.cpp\
+		Harl.cpp\
 		
 
 OBJ = $(SRC:.cpp=.o)
