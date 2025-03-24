@@ -3,17 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sidy <sidy@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: sidiallo <sidiallo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/22 13:03:17 by sidy              #+#    #+#             */
-/*   Updated: 2025/02/23 20:01:02 by sidy             ###   ########.fr       */
+/*   Updated: 2025/03/24 15:29:15 by sidiallo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 int main() 
 {
-    int N = 0;
+    int N = 50;
     Zombie* horde = zombieHorde(N,"gims");
 
     if (horde) 

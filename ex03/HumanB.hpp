@@ -6,7 +6,7 @@
 /*   By: sidiallo <sidiallo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/24 18:18:30 by sidiallo          #+#    #+#             */
-/*   Updated: 2025/02/24 20:28:53 by sidiallo         ###   ########.fr       */
+/*   Updated: 2025/03/24 18:18:18 by sidiallo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,10 @@ class HumanB
     HumanB(std::string name);
     ~HumanB();
     void attack();
-    void setWeapon(Weapon weapon);
+    void setWeapon(Weapon &weapon);
   
   private:
-    std::string weapon;
+    Weapon* weapon;
     std::string name;
 
 
