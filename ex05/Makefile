@@ -1,6 +1,6 @@
 NAME = Harl
 
-FLAG =  -g -Wall -Wextra -Werror -std=c++98
+FLAG =  -Wall -Wextra -Werror -std=c++98
 CC = c++ 
 
 SRC = main.cpp\
