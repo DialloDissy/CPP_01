@@ -6,7 +6,7 @@
 /*   By: sidiallo <sidiallo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/25 15:23:29 by sidiallo          #+#    #+#             */
-/*   Updated: 2025/02/26 16:00:15 by sidiallo         ###   ########.fr       */
+/*   Updated: 2025/03/26 15:37:39 by sidiallo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,8 @@ int main(int ac, char **av)
         std::string s2 = av[3];
         std::string line;
         
-        
+        if(s1 == "\0")
+            return(1);
         std::ifstream ifs(filename.c_str());
         if(!ifs)
             return(1);
