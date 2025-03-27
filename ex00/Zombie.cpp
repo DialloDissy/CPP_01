@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Zombie.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sidy <sidy@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: sidiallo <sidiallo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/17 16:20:31 by sidiallo          #+#    #+#             */
-/*   Updated: 2025/02/23 19:09:34 by sidy             ###   ########.fr       */
+/*   Updated: 2025/03/27 17:45:49 by sidiallo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,5 +46,5 @@ void Zombie::announce()
 
 Zombie::~Zombie()
 {
-    std::cout <<"destructor created"<< std::endl;
+    std::cout <<name<<" destructor created"<< std::endl;
 }
